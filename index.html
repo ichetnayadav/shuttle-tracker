@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Shuttle Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>🚍 Smart Campus Shuttle Tracker</h1>
+    <p>Live Tracking + AI Delay Prediction</p>
+</div>
+
+<div class="container">
+
+    <!-- BUS SECTION -->
+    <div class="card">
+        <h2>🚍 Buses</h2>
+        <button onclick="loadBuses()">Load Buses</button>
+        <ul id="busList"></ul>
+    </div>
+
+    <!-- ROUTE SECTION -->
+    <div class="card">
+        <h2>🗺️ Routes</h2>
+        <button onclick="loadRoutes()">Load Routes</button>
+        <ul id="routeList"></ul>
+    </div>
+
+    <!-- AI SECTION -->
+    <div class="card">
+        <h2>🤖 AI Delay Prediction</h2>
+
+        <input type="number" id="traffic" placeholder="Traffic Level (1-5)">
+        <input type="number" id="distance" placeholder="Distance (km)">
+
+        <button onclick="predictDelay()">Predict Delay</button>
+
+        <p id="result">Result will appear here</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
